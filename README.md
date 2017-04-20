@@ -1,5 +1,7 @@
+#
 # Setting Up Environment Using Setup Script
-##
+#
+
 * Remove all images and containers
   $ docker rm -f $(docker ps -a -q);docker rmi $(docker images -q)
 
@@ -13,9 +15,9 @@
 * run and detach using (ctl + c)
   $ docker exec tonitest /usr/sbin/dnsmasq -d  
 
-##################################################################
+#
 # Setting Up Environment Manually
-##################################################################
+#
 
 * Remove all images
   $ docker rm -f $(docker ps -a -q);docker rmi $(docker images -q)
@@ -32,11 +34,9 @@
 * Start DNS Masq from the host machine (then ckick ^C to detach)
     $ docker exec tonitest /usr/sbin/dnsmasq -d  
 
-##################################################################
-# Other commands
-##################################################################
-
-
+#
+# Useful Docker commands
+#
 
 * Remove all images
   $ docker rm -f $(docker ps -a -q);docker rmi $(docker images -q)
