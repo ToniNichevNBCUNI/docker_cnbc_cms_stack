@@ -1,12 +1,14 @@
 #
 # Setting Up Environment Using Setup Script
 
-1. Remove all previous images and containers (if any)
-..* $ docker rm -f $(docker ps -a -q);docker rmi $(docker images -q).
+1. Install [Docker][https://www.docker.com/community-edition]
 
-2. Edit assets/install_cnbc_cms.sh and add your git username and password
+2. Remove all previous images and containers (if any)
+..* $ docker rm -f $(docker ps -a -q);docker rmi $(docker images -q)
 
-3. run install scripts and run and detach docker after running each install script using (ctl + c)
+3. Edit assets/install_cnbc_cms.sh and add your git username and password
+
+4. run install scripts and run and detach docker after running each install script using (ctl + c)
 ..*$ docker exec tonitest /usr/sbin/dnsmasq -d  
 
 ..*$ ./Setup1.sh
