@@ -2,7 +2,7 @@
 # Setting Up Environment Using Setup Script
 
 1. Remove all previous images and containers (if any)
-..* $ docker rm -f $(docker ps -a -q);docker rmi $(docker images -q)
+..* $ docker rm -f $(docker ps -a -q);docker rmi $(docker images -q).
 
 2. Edit assets/install_cnbc_cms.sh and add your git username and password
 
