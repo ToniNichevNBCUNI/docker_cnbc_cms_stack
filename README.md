@@ -1,6 +1,5 @@
 #
 # Setting Up Environment Using Setup Script
-#
 
 * Remove all images and containers
   $ docker rm -f $(docker ps -a -q);docker rmi $(docker images -q)
@@ -17,7 +16,6 @@
 
 #
 # Setting Up Environment Manually
-#
 
 * Remove all images
   $ docker rm -f $(docker ps -a -q);docker rmi $(docker images -q)
@@ -36,7 +34,7 @@
 
 #
 # Useful Docker commands
-#
+
 
 * Remove all images
   $ docker rm -f $(docker ps -a -q);docker rmi $(docker images -q)
